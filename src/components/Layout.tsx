@@ -21,6 +21,7 @@ import {
 } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useLocation } from 'react-router-dom'
+import { ProfileButton } from './ProfileButton'
 import MobileNavigation from './MobileNavigation'
 
 interface LayoutProps {
@@ -184,6 +185,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                  <span className="font-semibold hidden sm:inline">Redeem</span>
                </motion.div>
              </Link>
+              
+              {/* Profile Button */}
+              <ProfileButton />
             </div>
           </div>
         </div>
